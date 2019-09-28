@@ -39,12 +39,24 @@ nav a:hover {
   font-size: 3em;
 }
 
+h2 {
+  background-color: rgba(249, 132, 239 ,1 );
+}
+
 #portfolios{
   padding-top: 0px;
   margin-top: 0px;
   display: block;
   height: 100%;
   text-align: center;
+}
+
+#portfolios img {
+  display: block;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 
 #projects {
@@ -91,6 +103,12 @@ display: inline-grid;
 text-align: top;
 
   width: 20%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  background-color: rgba(144, 238, 144, 0.9);
 }
 
 .clearfix::after {
