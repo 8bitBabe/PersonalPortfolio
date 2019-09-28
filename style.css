@@ -6,7 +6,7 @@ nav {
   display: block;
   position: sticky;
   top: 0;
-  height: 40px;
+  height: 80px;
   width: 100%;
   background-color: rgba(144, 238, 144, 0.9);
   font-size: 25px;
@@ -16,7 +16,7 @@ nav {
 }
 
 nav a {
-  padding: 0px 50px 0px 50px;
+  padding: 50px 50px 50px 50px;
   color: #000;
   text-decoration: none;
 }
@@ -29,7 +29,7 @@ nav a:hover {
   padding-top: 0px;
   margin-top: 0px;
   display: block;
-  height: 100vh; /*left for the sake of the FCC test*/
+  /*height: 100vh; left for the sake of the FCC test*/
   text-align: center;
 }
 
@@ -39,11 +39,19 @@ nav a:hover {
   font-size: 3em;
 }
 
-#projects {
+#portfolios{
   padding-top: 0px;
   margin-top: 0px;
   display: block;
-  height: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+#projects {
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 100%;
+  display: block;
   text-align: center;
 }
 
@@ -51,22 +59,59 @@ nav a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 100%;
 }
 
-#portfolios{
-  padding-top: 0px;
-  margin-top: 0px;
-  display: block;
-  height: 50%;
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+display: inline-grid;
+text-align: top;
+
+  width: 20%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+
  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+    .responsive {
+    width: 100%;
+    }
+  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+  }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
