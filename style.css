@@ -129,13 +129,45 @@ footer {
     width: 49.99999%;
     margin: 6px 0;
     }
+  nav {
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(144, 238, 144, 0.9);
+  font-size: 5px;
+  text-align: center;
+  color: white;
+  padding: 25px 16px;
+  }
   }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+    nav {
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(144, 238, 144, 0.9);
+  font-size: 5px;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  }
+  }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+      nav {
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(144, 238, 144, 0.9);
+  font-size: 5px;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  }
+  }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...} 
