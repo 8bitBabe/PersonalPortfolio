@@ -39,6 +39,14 @@ nav a:hover {
   font-size: 3em;
 }
 
+p {
+  border: 5px dotted rgba(249, 132, 239 ,1 );
+  padding: 22px;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
 h2 {
   background-color: rgba(249, 132, 239 ,1 );
 }
@@ -67,20 +75,16 @@ h2 {
   text-align: center;
 }
 
-#projects img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
 div.gallery {
-  border: 1px solid #ccc;
+  border: 3px dotted #aaa;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center;/* Safari 7.0+ */
+  display: flex;
+  align-items: center;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 5px dotted rgba(249, 132, 239 ,1 );
 }
 
 div.gallery img {
@@ -99,9 +103,8 @@ div.desc {
 
 .responsive {
   padding: 0 6px;
-display: inline-grid;
-text-align: top;
-
+  display: inline-grid;
+  text-align: bottom;
   width: 20%;
 }
 
@@ -109,6 +112,11 @@ footer {
   display: block;
   text-align: center;
   background-color: rgba(144, 238, 144, 0.9);
+}
+
+footer p {
+  border: hidden;
+  padding: 15px 0px 10px 0px;
 }
 
 .clearfix::after {
@@ -126,7 +134,7 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .responsive {
-    width: 50%;
+    width: 49.99999%;
     margin: 6px 0;
     }
   nav {
