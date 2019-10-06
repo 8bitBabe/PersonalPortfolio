@@ -6,13 +6,14 @@ nav {
   display: block;
   position: sticky;
   top: 0;
-  height: 80px;
+  height: auto;
   width: 100%;
   background-color: rgba(144, 238, 144, 0.9);
   font-size: 25px;
   text-align: center;
   color: white;
   padding: 25px 16px;
+  font-family: 'Saira', sans-serif;
 }
 
 nav a {
@@ -36,7 +37,8 @@ nav a:hover {
 #welcome-section h1 {
   text-shadow: 1px 1px #000;
   color: #fff;
-  font-size: 3em;
+  font-size: 3.5em;
+  font-family: 'Quantico', sans-serif;
 }
 
 p {
@@ -45,10 +47,13 @@ p {
   width: 50%;
   text-align: center;
   display: inline-block;
+  font-family: 'Saira', sans-serif;
 }
 
 h2 {
   background-color: rgba(249, 132, 239 ,1 );
+  font-family: 'Quantico', sans-serif;
+  font-size: 30px;
 }
 
 #portfolios{
@@ -65,6 +70,10 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+}
+
+#portfolios a {
+  font-family: 'Saira', sans-serif;
 }
 
 #projects {
@@ -95,6 +104,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-family: 'Saira', sans-serif;
 }
 
 * {
